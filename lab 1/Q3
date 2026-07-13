@@ -1,0 +1,18 @@
+list1 = []
+list2 = []
+
+n1 = int(input("Enter number of elements in first list: "))
+for i in range(n1):
+    list1.append(int(input()))
+
+n2 = int(input("Enter number of elements in second list: "))
+for i in range(n2):
+    list2.append(int(input()))
+
+count = 0
+
+for i in list1:
+    if i in list2:
+        count = count + 1
+
+print("Number of common elements =", count)

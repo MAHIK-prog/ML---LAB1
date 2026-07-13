@@ -1,0 +1,18 @@
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+
+A = []
+
+print("Enter the matrix elements:")
+for i in range(r):
+    row = []
+    for j in range(c):
+        row.append(int(input()))
+    A.append(row)
+
+print("Transpose of the matrix is:")
+
+for j in range(c):
+    for i in range(r):
+        print(A[i][j], end=" ")
+    print()
